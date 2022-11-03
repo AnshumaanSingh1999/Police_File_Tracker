@@ -1,0 +1,11 @@
+.margin{
+    margin-top: 20px;
+}
+.centre{
+    text-align: center;
+    width: 500px;
+    margin-left: 320px;;
+}
+#signup{
+    display: none;
+}

@@ -8,7 +8,7 @@ include_once("deletebackend.php");
 <title>Police File Tracker</title>
 <link rel = "icon" href="up_police_icon.ico" type = "image/x-icon"> 
 <script src="linksfunctionality.js"></script>
-<link rel="stylesheet" href="homestyle.css">
+<link rel="stylesheet" href="deleteestyle.css">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
