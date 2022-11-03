@@ -18,7 +18,7 @@ $bnn = htmlspecialchars(strip_tags(mysqli_real_escape_string($db_connection, $bn
 		$query = "INSERT INTO files (filename,filtetype,beneficiaryname,dateoforigin/*,status,updatedby*/) VALUES ('$fn','$ft','$bnn','$doo')";
 		$result = mysqli_query($db_connection,$query);
 		if($result) {
-			$msg = "ID Created Successfully.";
+			$msg = "File Details Uploaded Successfully.";
 			} 
 			else {
 			$msg = "Renter Username or Password!";

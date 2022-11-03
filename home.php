@@ -64,6 +64,24 @@ if($_SESSION["username"]) {
 
 </form>
 <hr>
+
+<?php
+    
+
+    
+            if(isset($msg)){    ?>  
+
+            
+            <div class="alert alert-success margin">
+      <?php
+    
+        echo $msg;
+        
+    
+    ?>
+  </div> 
+  <br>   
+         <?php } ?>
 <h1>File Details:</h1>
 <br>
 <!--
