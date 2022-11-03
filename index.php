@@ -23,6 +23,14 @@ else{
                 margin-top: 160px;
                 width: 400px;
             }
+            /*body {
+                background-image:url(Column_2-696x464.jpg);
+                  
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+              }*/
+              
         </style>
         
     </head>
