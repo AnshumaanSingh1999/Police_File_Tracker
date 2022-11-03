@@ -6,6 +6,7 @@ if(isset($_POST['submit']) )
 {
 $fn = $_POST['fn'];
 $ft = $_POST['ft'];
+date_default_timezone_set('Asia/Kolkata');
 $doo = date("Y-m-d");
 $bnn = $_POST['bnn'];
 $udb=$_SESSION["username"];

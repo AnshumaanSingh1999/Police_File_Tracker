@@ -5,6 +5,7 @@ if(isset($_POST['updatesubmit']) )
 {
 $fltkn = $_POST['fltkn'];
 $status = $_POST['status'];
+date_default_timezone_set('Asia/Kolkata');
 $date=date("Y-m-d");
 $udb=$_SESSION["username"];
 
