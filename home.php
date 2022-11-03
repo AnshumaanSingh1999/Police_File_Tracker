@@ -13,12 +13,14 @@ include_once("homereadbackend.php");
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="linksfunctionality.js"></script>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 table, th, td {
-  border:1px solid black;
+  border:2px solid black;
 }
 </style>
 </head>
@@ -40,7 +42,6 @@ if($_SESSION["username"]) {
 <form method="post" autocomplete="off">
   <div class="row">
   <div class="col-sm-3 item"><b>File Title</b></div>
-  <div class="col-sm-2 item"><b>Date of Origin</b></div>
   <div class="col-sm-2 item"><b>File Type</b></div>
   <div class="col-sm-3 item"><b>Beneficiary Name</b></div>
 </div>
@@ -48,7 +49,6 @@ if($_SESSION["username"]) {
 
 <div class="row">
   <div class="col-sm-3 item"><input type="text" name="fn" value = "<?php if (array_key_exists('fn', $_POST)) {echo $_POST['fn'];}?>" class="form-control" required></div>
-  <div class="col-sm-2 item"><input type="date" name="doo" value = "<?php if (array_key_exists('doo', $_POST)) {echo $_POST['doo'];}?>" class="form-control" required></div>
   <div class="col-sm-2 item">
   <select name="ft" id="cars" required>
   <option value="" selected>Select Options</option>
@@ -60,7 +60,7 @@ if($_SESSION["username"]) {
 </div>
   <div class="col-sm-3 item"><input type="text" name="bnn" value = "<?php if (array_key_exists('bnn', $_POST)) {echo $_POST['bnn'];}?>" class="form-control" required></div>
 
-  <div class="col-sm-2 item"><input type="submit" name="submit" class="btn btn-secondary" value="Submit Details"></div>
+  <div class="col-sm-3 item"><input type="submit" name="submit" class="btn btn-secondary" value="Create File"></div>
 
 </div>
 <br>
@@ -75,7 +75,7 @@ if($_SESSION["username"]) {
             if(isset($msg)){    ?>  
 
             
-            <div class="alert alert-success margin">
+            <div class="alert alert-success centre">
       <?php
     
         echo $msg;
@@ -88,7 +88,7 @@ if($_SESSION["username"]) {
 <h1>File Details:</h1>
 <br>
 
-<table>
+<table class="table table-hover">
   <tr>
     <th>Token No</th>
     <th>File Title</th>
@@ -97,6 +97,7 @@ if($_SESSION["username"]) {
     <th>Date of Origin</th>
     <th>Status</th>
     <th>Updated By</th>
+
   </tr>
 
   <?php
@@ -115,8 +116,8 @@ while($rows=$resultread->fetch_assoc()){
     <td><?php echo $rows['dateoforigin']??''; ?></td>
     <td><?php echo $rows['status']??''; ?></td>
     <td><?php echo $rows['updatedby']??''; ?></td>
-    <td><button>Update</button></td>
-    <td><button>Delete</button></td>
+   
+
 
   </tr>
 
@@ -128,6 +129,7 @@ while($rows=$resultread->fetch_assoc()){
   
 </table>
 
+<br>
 
 
 </div>

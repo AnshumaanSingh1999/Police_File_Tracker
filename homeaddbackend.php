@@ -6,10 +6,10 @@ if(isset($_POST['submit']) )
 {
 $fn = $_POST['fn'];
 $ft = $_POST['ft'];
-$doo = $_POST['doo'];
+$doo = date("Y-m-d");
 $bnn = $_POST['bnn'];
 $udb=$_SESSION["username"];
-$status="Pending";
+$status="File Created";
 
 $db_connection = mysqli_connect("localhost", "root", "", "police_file_tracker");
 $fn = htmlspecialchars(strip_tags(mysqli_real_escape_string($db_connection, $fn)));

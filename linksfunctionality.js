@@ -15,3 +15,12 @@ function myFunction() {
 function myFunction2() {
 location.replace("logout.php")
 }
+function myFunction3() {
+location.replace("update.php")
+}
+function myFunction4() {
+location.replace("delete.php")
+}
+function myFunction5() {
+location.replace("home.php")
+}
