@@ -48,7 +48,7 @@ if($_SESSION["username"]) {
 <br>
 
 <div class="row">
-  <div class="col-sm-3 item"><input type="text" name="fn" value = "<?php if (array_key_exists('fn', $_POST)) {echo $_POST['fn'];}?>" class="form-control" required></div>
+  <div class="col-sm-3 item"><input type="text" name="fn" class="form-control" required></div>
   <div class="col-sm-2 item">
   <select name="ft" id="cars" required>
   <option value="" selected>Select Options</option>
@@ -58,7 +58,7 @@ if($_SESSION["username"]) {
   <option value="Leave Request">Leave Request</option>
 </select>
 </div>
-  <div class="col-sm-3 item"><input type="text" name="bnn" value = "<?php if (array_key_exists('bnn', $_POST)) {echo $_POST['bnn'];}?>" class="form-control" required></div>
+  <div class="col-sm-3 item"><input type="text" name="bnn" class="form-control" required></div>
 
   <div class="col-sm-3 item"><input type="submit" name="submit" class="btn btn-secondary" value="Create File"></div>
 

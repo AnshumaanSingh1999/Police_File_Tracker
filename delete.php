@@ -44,7 +44,7 @@ if($_SESSION["username"]) {
 <br>
 
 <div class="row">
-  <div class="col-sm-3 item"><input type="number" name="fltkn" value = "<?php if (array_key_exists('fltkn', $_POST)) {echo $_POST['fltkn'];}?>" class="form-control" required></div>
+  <div class="col-sm-3 item"><input type="number" name="fltkn" class="form-control" required></div>
   
   <div class="col-sm-2 item"><input type="submit" name="submit" class="btn btn-secondary" value="Delete File"></div>
 
