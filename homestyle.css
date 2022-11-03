@@ -3,6 +3,7 @@
 }
 .centre{
     text-align: center;
+    width: 400px;
 }
 #signup{
     display: none;

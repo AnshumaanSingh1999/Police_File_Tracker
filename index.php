@@ -1,5 +1,5 @@
-<?php include_once("signupbackend.php") ?>
-<?php include_once("signinbackend.php") ?>
+<?php include_once("signupbackend.php"); ?>
+<?php include_once("signinbackend.php"); ?>
 <?php
 if($_SESSION["username"]) {
   header("Location:home.php");

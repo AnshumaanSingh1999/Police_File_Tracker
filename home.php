@@ -1,13 +1,16 @@
 <?php
 session_start();
 error_reporting(0);
-include_once("homeaddbackend.php")
+include_once("homeaddbackend.php");
+include_once("homereadbackend.php");
 ?>
 <html>
 <head>
 <title>Police File Tracker</title>
 <link rel = "icon" href="up_police_icon.ico" type = "image/x-icon"> 
 <script src="linksfunctionality.js"></script>
+<link rel="stylesheet" href="homestyle.css">
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -84,22 +87,47 @@ if($_SESSION["username"]) {
          <?php } ?>
 <h1>File Details:</h1>
 <br>
-<!--
+
 <table>
   <tr>
     <th>Token No</th>
     <th>File Title</th>
-    <th>Date of Origin</th>
     <th>File Type</th>
     <th>Beneficiary Name</th>
+    <th>Date of Origin</th>
     <th>Status</th>
     <th>Updated By</th>
   </tr>
 
-  
+  <?php
+
+while($rows=$resultread->fetch_assoc()){
+
+
+
+?>
+
+  <tr>
+    <td><?php echo $rows['tokenno']??''; ?></td>
+    <td><?php echo $rows['filename']??''; ?></td>
+    <td><?php echo $rows['filtetype']??''; ?></td>
+    <td><?php echo $rows['beneficiaryname']??''; ?></td>
+    <td><?php echo $rows['dateoforigin']??''; ?></td>
+    <td><?php echo $rows['status']??''; ?></td>
+    <td><?php echo $rows['updatedby']??''; ?></td>
+    <td><button>Update</button></td>
+    <td><button>Delete</button></td>
+
+  </tr>
+
+  <?php
+                }
+            
+
+?>
   
 </table>
--->
+
 
 
 </div>
