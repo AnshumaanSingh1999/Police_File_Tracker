@@ -27,7 +27,10 @@ if($_SESSION["username"]) {
 ?>
 <div class="container">
 
-<h4>Welcome <?php echo htmlspecialchars($_SESSION["username"]); ?>.  <button id="logout" onclick="myFunction2()" type="button">Logout</button> <button id="home" onclick="myFunction5()" type="button">Home</button> <button id="update" onclick="myFunction3()" type="button">Update</button>    </h4>
+<h4>Welcome <?php echo htmlspecialchars($_SESSION["username"]); ?>.  <button id="logout" onclick="myFunction2()" type="button">Logout</button> 
+<button id="update" onclick="myFunction3()" type="button">Update</button>
+<button id="home" onclick="myFunction5()" type="button">Home</button> 
+    </h4>
 <hr>
 <h1>Delete File Details:</h1>
 

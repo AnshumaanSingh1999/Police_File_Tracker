@@ -42,17 +42,9 @@ else{
         <form method="post" class="margin" autocomplete="off">
   <fieldset class="form-group">
     <label for="uname">Enter the UserName</label>
-    <input type="text" required class="form-control centre" id="uname"  name="uname"  value = "<?php if (array_key_exists('uname', $_POST)) {
-    echo $_POST['uname']; 
-    
- }
- ?>">
+    <input type="text" required class="form-control centre" id="uname"  name="uname">
       <label for="pass">Enter the Password</label>
-    <input type="password" required class="form-control centre" id="pass"  name="pass"  value = "<?php if (array_key_exists('pass', $_POST)) {
-    echo $_POST['pass'];
-}
-                                                                                    
-?>">
+    <input type="password" required class="form-control centre" id="pass"  name="pass">
                                                                                         
       
   </fieldset>
@@ -69,17 +61,9 @@ else{
             <form method="post" class="margin" autocomplete="off">
   <fieldset class="form-group">
     <label for="uname2">Enter the UserName</label>
-    <input type="text" required class="form-control centre" id="uname2"  name="uname2"  value = "<?php if (array_key_exists('uname2', $_POST)) {
-    echo $_POST['uname2']; 
-    
- }
- ?>">
+    <input type="text" required class="form-control centre" id="uname2"  name="uname2">
       <label for="pass2">Enter the Password</label>
-    <input type="password" required class="form-control centre" id="pass2"  name="pass2"  value = "<?php if (array_key_exists('pass2', $_POST)) {
-    echo $_POST['pass2'];
-}
-                                                                                    
-?>">
+    <input type="password" required class="form-control centre" id="pass2"  name="pass2">
                                                                                         
       
   </fieldset>
