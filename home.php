@@ -59,6 +59,7 @@ if($_SESSION["username"]) {
   <option value="Medical Reimbursment">Medical Reimbursment</option>
   <option value="Quarter Allocation">Quarter Allocation</option>
   <option value="Leave Request">Leave Request</option>
+  <option value="Case File">Case File</option>
 </select>
 </div>
 <div class="col-sm-4 item">
