@@ -47,7 +47,7 @@ if($_SESSION["username"]) {
   <div class="col-sm-2 item">
   <select name="status" id="status" required>
   <option value="" selected>Select Options</option>
-  <option value="Action Pending">Action Pending</option>
+  <option value="Action Started">Action Started</option>
   <option value="Action Completed">Action Completed</option>
   <option value="File Closed">File Closed</option>
 </select>
