@@ -96,6 +96,24 @@ else{
   </div>    
          <?php } ?>
 
+
+         <?php
+    
+
+    
+            if(isset($msg5)){    ?>  
+
+            
+            <div class="alert alert-danger margin">
+      <?php
+    
+        echo $msg5;
+        
+    
+    ?>
+  </div>    
+         <?php } ?>
+
         
         
     </div>

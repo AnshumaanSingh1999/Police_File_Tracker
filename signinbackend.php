@@ -14,7 +14,7 @@ if(is_array($row)) {
 $_SESSION["username"] = $row['username'];
 } 
 else {
-$msg = "Invalid Username or Password.";
+$msg5 = "Invalid Username or Password.";
 echo "<meta http-equiv='refresh' content='2'>";
 
 }

@@ -18,7 +18,7 @@ $db_connection = mysqli_connect("localhost", "root", "", "police_file_tracker");
 		$rows = mysqli_fetch_array($resultread2);
 		if($rows){
 			$hist=$rows['history'];
-			$newhist="". $hist."<br>". $status. " by " . $udb." on " . $date."";
+			$newhist="". $hist."<br>". $status. " by " . $udb." on " . $date.".";
 			$msg = "File Details Updated Successfully.";
 			$queryupdate = "UPDATE files SET dateoforigin='$date',status='$status',updatedby='$udb',history='$newhist' WHERE tokenno='$fltkn'"; 
 			$resultupdate = mysqli_query($db_connection,$queryupdate);
