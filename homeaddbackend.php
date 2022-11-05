@@ -19,8 +19,8 @@ $doo = htmlspecialchars(strip_tags(mysqli_real_escape_string($db_connection, $do
 $bnn = htmlspecialchars(strip_tags(mysqli_real_escape_string($db_connection, $bnn)));
 $udb = htmlspecialchars(strip_tags(mysqli_real_escape_string($db_connection, $udb)));
 $status = htmlspecialchars(strip_tags(mysqli_real_escape_string($db_connection, $status)));
-
-		$query = "INSERT INTO files (filename,filtetype,beneficiaryname,dateoforigin,status,updatedby) VALUES ('$fn','$ft','$bnn','$doo','$status','$udb')";
+$history =  "". $status. " by " . $udb." on " . $doo."";
+		$query = "INSERT INTO files (filename,filtetype,beneficiaryname,dateoforigin,status,updatedby,history) VALUES ('$fn','$ft','$bnn','$doo','$status','$udb','$history')";
 		$result = mysqli_query($db_connection,$query);
 		if($result) {
 			$msg = "File Details Uploaded Successfully.";

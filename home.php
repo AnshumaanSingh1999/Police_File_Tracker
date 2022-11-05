@@ -41,14 +41,17 @@ if($_SESSION["username"]) {
   <br>
 <form method="post" autocomplete="off">
   <div class="row">
-  <div class="col-sm-3 item"><b>File Title</b></div>
-  <div class="col-sm-2 item"><b>File Type</b></div>
   <div class="col-sm-3 item"><b>Beneficiary Name</b></div>
+  <div class="col-sm-2 item"><b>File Type</b></div>
+
+  <div class="col-sm-3 item"><b>File Details</b></div>
+  
 </div>
 <br>
 
 <div class="row">
-  <div class="col-sm-3 item"><input type="text" name="fn" class="form-control" required></div>
+<div class="col-sm-3 item"><input type="text" name="bnn" class="form-control" required></div>
+
   <div class="col-sm-2 item">
   <select name="ft" id="cars" required>
   <option value="" selected>Select Options</option>
@@ -58,8 +61,9 @@ if($_SESSION["username"]) {
   <option value="Leave Request">Leave Request</option>
 </select>
 </div>
-  <div class="col-sm-3 item"><input type="text" name="bnn" class="form-control" required></div>
-
+<div class="col-sm-4 item">
+  <textarea id="w3review" name="fn" class="form-control" rows="4" cols="40" required></textarea>
+  </div>
   <div class="col-sm-3 item"><input type="submit" name="submit" class="btn btn-secondary" value="Create File"></div>
 
 </div>
@@ -91,12 +95,14 @@ if($_SESSION["username"]) {
 <table class="table table-hover">
   <tr>
     <th>Token No</th>
-    <th>File Title</th>
-    <th>File Type</th>
     <th>Beneficiary Name</th>
+    <th>File Type</th>
+    <th>File Details</th>
     <th>Date of Origin</th>
     <th>Status</th>
     <th>Updated By</th>
+    <th>History</th>
+
 
   </tr>
 
@@ -110,13 +116,14 @@ while($rows=$resultread->fetch_assoc()){
 
   <tr>
     <td><?php echo $rows['tokenno']??''; ?></td>
-    <td><?php echo $rows['filename']??''; ?></td>
-    <td><?php echo $rows['filtetype']??''; ?></td>
     <td><?php echo $rows['beneficiaryname']??''; ?></td>
+    <td><?php echo $rows['filtetype']??''; ?></td>
+    <td><?php echo $rows['filename']??''; ?></td>
     <td><?php echo $rows['dateoforigin']??''; ?></td>
     <td><?php echo $rows['status']??''; ?></td>
     <td><?php echo $rows['updatedby']??''; ?></td>
-   
+    <td><?php echo $rows['history']??''; ?></td>
+
 
 
   </tr>
