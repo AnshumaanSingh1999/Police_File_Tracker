@@ -24,7 +24,7 @@ $db_connection = mysqli_connect("localhost", "root", "", "police_file_tracker");
 			$resultupdate = mysqli_query($db_connection,$queryupdate);
 		}
 		else{
-			$msg = "Renter Correct Token No!";
+			$msg2 = "Renter Correct Token No!";
 			}
 				echo "<meta http-equiv='refresh' content='2'>";
 }

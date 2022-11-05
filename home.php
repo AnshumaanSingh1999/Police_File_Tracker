@@ -43,7 +43,6 @@ if($_SESSION["username"]) {
   <div class="row">
   <div class="col-sm-3 item"><b>Beneficiary Name</b></div>
   <div class="col-sm-2 item"><b>File Type</b></div>
-
   <div class="col-sm-3 item"><b>File Details</b></div>
   
 </div>
@@ -63,12 +62,12 @@ if($_SESSION["username"]) {
 </select>
 </div>
 <div class="col-sm-4 item">
-  <textarea id="w3review" name="fn" class="form-control" rows="4" cols="40" required></textarea>
+  <textarea id="w3review" name="fn" class="form-control" rows="2" cols="40" required></textarea>
   </div>
   <div class="col-sm-3 item"><input type="submit" name="submit" class="btn btn-secondary" value="Create File"></div>
 
 </div>
-<br>
+
 
 </form>
 <hr>

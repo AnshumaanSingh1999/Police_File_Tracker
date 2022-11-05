@@ -75,6 +75,25 @@ if($_SESSION["username"]) {
   <br>   
          <?php } ?>
 
+         <?php
+    
+
+    
+            if(isset($msg2)){    ?>  
+
+            
+            <div class="alert alert-danger centre">
+      <?php
+    
+        echo $msg2;
+        
+    
+    ?>
+  </div> 
+  <br>   
+         <?php } ?>
+
+
 
 
 
